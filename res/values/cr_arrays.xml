@@ -208,6 +208,7 @@
 
     <string-array name="shortcut_action_entries">
         <item>@string/shortcut_action_back</item>
+        <item>@string/shortcut_action_theme_switch</item>
         <item>@string/shortcut_action_app</item>
         <item>@string/shortcut_action_home</item>
         <item>@string/shortcut_action_kill</item>
@@ -231,6 +232,7 @@
         <item>**app**</item>
         <item>**home**</item>
         <item>**kill**</item>
+        <item>**theme_switch**</item>
         <item>**lastapp**</item>
         <item>**menu_big**</item>
         <item>**notifications**</item>
@@ -598,6 +600,23 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+    
+    <string-array name="shortcut_action_values" translatable="false">
+        <item>**theme_switch**</item>
+    </string-array>
+    
+    <!-- Themes -->
+    <string-array name="theme_auto_mode_entries">
+	<item>@string/theme_auto_mode_off</item>
+	<item>@string/theme_auto_mode_lightsensor</item>
+	<item>@string/theme_auto_mode_twilight</item>
+    </string-array>
+
+    <string-array name="theme_auto_mode_values" translatable="false">
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
     </string-array>
 
 </resources>

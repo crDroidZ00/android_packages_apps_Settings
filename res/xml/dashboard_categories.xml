@@ -107,6 +107,15 @@
                 android:fragment="com.android.settings.crdroid.ExtraSettings"
                 android:icon="@drawable/ic_settings_crdroid"
                 />
+        <!-- TRDS -->
+        <dashboard-tile
+                android:id="@+id/theme_settings"
+                android:icon="@drawable/ic_settings_theme"
+                android:fragment="com.android.settings.slim.themes.ThemeSettings"
+                android:title="@string/theme_settings_title"
+                />
+        <!-- Themes -->
+        <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
         <dashboard-tile
                 android:id="@+id/zenfone2_ota"
                 android:title="OTAUpdates"
