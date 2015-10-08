@@ -175,6 +175,9 @@ public class QSTileHolder {
             case QSConstants.TILE_NOTIFICATIONS:
                 resourceName = "ic_qs_ringer_audible";
                 stringId = R.string.qs_notifications_tile;
+            case QSConstants.TILE_TRDS:
+                resourceName = "ic_qs_trds_on";
+                stringId = R.string.qs_tile_pb;
                 break;
             // Dynamic tiles
             case QSConstants.DYNAMIC_TILE_NEXT_ALARM:
