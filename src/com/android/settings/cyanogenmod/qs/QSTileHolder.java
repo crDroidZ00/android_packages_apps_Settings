@@ -104,6 +104,10 @@ public class QSTileHolder {
                 resourceName = "ic_hotspot_disable";
                 stringId = R.string.qs_tile_hotspot;
                 break;
+            case QSConstants.TILE_OTA:
+                resourceName = "ic_qs_zfota";
+                stringId = R.string.qs_tile_zfota;
+                break;
             case QSConstants.TILE_ADB_NETWORK:
                 resourceName = "ic_qs_network_adb_on";
                 stringId = R.string.qs_tile_adb_over_network;

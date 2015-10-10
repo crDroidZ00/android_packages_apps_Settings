@@ -625,5 +625,8 @@
     <!-- Ticker -->
     <string name="status_bar_ticker_title">Notification Ticker</string>
     <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
+    
+    <!-- Zenfone2 custom strings -->
+    <string name="qs_tile_zfota">OTA Updates</string>
 
 </resources>

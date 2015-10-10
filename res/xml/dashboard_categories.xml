@@ -107,6 +107,16 @@
                 android:fragment="com.android.settings.crdroid.ExtraSettings"
                 android:icon="@drawable/ic_settings_crdroid"
                 />
+        <dashboard-tile
+                android:id="@+id/zenfone2_ota"
+                android:title="OTA Updater"
+                android:icon="@drawable/ic_zfota_tint"
+                android:key="ota_updates">
+        <intent android:targetPackage="com.ota.updates" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="com.ota.updates.activities.MainActivity"/>
+        
+        </dashboard-tile>
 
     </dashboard-category>
 
