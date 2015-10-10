@@ -65,7 +65,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
     private static final String PROPERTY_CMLICENSE_URL = "ro.cmlegal.url";
     private static final String FILENAME_PROC_MEMINFO = "/proc/meminfo";
-    private static final String FILENAME_PROC_CPUINFO = "/proc/cpuinfo";
 
     private static final String KEY_CONTAINER = "container";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
@@ -91,8 +90,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CM_LICENSE = "cmlicense";
-    private static final String KEY_DEVICE_CPU = "device_cpu";
     private static final String KEY_DEVICE_MEMORY = "device_memory";
+    private static final String Z551ML_CPU = "Z551ML_cpu";
+    private static final String Z550ML_CPU = "Z550ML_cpu";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -121,6 +121,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_VERSION, "ro.crdroid.display.version");
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
+        setStringSummary(Z550ML_cpu, "Intel® Atom™ Quad Core Z3560 @ 1.8GHz");
+        setStringSummary(Z551ML_cpu, "Intel® Atom™ Quad Core Z3580 @ 2.3GHz");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -138,15 +140,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,
                 PROPERTY_SELINUX_STATUS);
 
-        // CPU & RAM info
-        String cpuInfo = getCPUInfo();
+        // RAM info
         String memInfo = getMemInfo();
-
-        if (cpuInfo != null) {
-            setStringSummary(KEY_DEVICE_CPU, cpuInfo);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_CPU));
-        }
 
         if (memInfo != null) {
             setStringSummary(KEY_DEVICE_MEMORY, memInfo);
@@ -553,51 +548,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     result = Long.parseLong(parts[1])/1024 + " MB";
                 }
             }
-        } catch (IOException e) {}
-
-        return result;
-    }
-
-    private String getCPUInfo() {
-        String result = null;
-
-        try {
-            /* The expected /proc/cpuinfo output is as follows:
-             * Processor   : ARMv7 Processor rev 2 (v7l)
-             * BogoMIPS    : 272.62
-             *
-             * This needs updating, since
-             *
-             * Hammerhead output :
-             * Processor   : ARMv7 Processor rev 0 (v7l)
-             * processor   : 0
-             * BogoMIPS    : xxx
-             *
-             * Shamu output :
-             * processor   : 0
-             * model name  : ARMv7 Processor rev 1 (v7l)
-             * BogoMIPS    : xxx
-             *
-             * Continue reading the file until running into a line starting
-             * with either "model name" or "Processor" to meet both
-             */
-            
-            BufferedReader reader = new BufferedReader(new FileReader(FILENAME_PROC_CPUINFO), 256);
-
-            String Line = reader.readLine();
-
-            while (Line != null) {
-                if (Line.indexOf("model name") == -1 &&
-                    Line.indexOf("Processor" ) == -1    ) {
-                    Line = reader.readLine();
-                } else {
-                    result = Line.split(":")[1].trim();
-                    break;
-                }
-            }
-
-            reader.close();
-
         } catch (IOException e) {}
 
         return result;

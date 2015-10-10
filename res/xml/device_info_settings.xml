@@ -146,29 +146,45 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/crdroid_build_date"
                 android:summary="@string/crdroid_build_date_default" />
-
-        <!-- Device cpu info -->
-        <Preference android:key="device_cpu"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/cpu_info"
-                android:summary="@string/device_info_default"/>
-
-        <!-- Device mem info -->
-        <Preference android:key="device_memory"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mem_info"
-                android:summary="@string/device_info_default"/>
-
+        
         <!-- Detailed build version -->
         <Preference android:key="build_number" 
                 style="?android:preferenceInformationStyle"
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
-
+        
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
 
+        <!-- Additional Settings -->
+        
+        <PreferenceCategory
+            android:key="add_settings"
+            android:name="Additional Infos">
+            
+            <PreferenceCategory
+                android:key="add_cpu"
+                android:name="CPU Infos">
+            
+        <Preference android:key="Z551ML_cpu"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/add_z551ml_cpu"
+                android:summary="@string/device_info_default"/>
+        
+        <Preference android:key="Z550ML_cpu"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/add_z550ml_cpu"
+                android:summary="@string/device_info_default"/>
+
+            </PreferenceCategory>
+        
+        <Preference android:key="device_memory"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/mem_info"
+                android:summary="@string/device_info_default"/>
+
+        </PreferenceCategory>
 </PreferenceScreen>
