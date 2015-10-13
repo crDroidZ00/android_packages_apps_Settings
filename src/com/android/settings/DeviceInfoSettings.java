@@ -98,8 +98,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String KEY_CM_LICENSE = "cmlicense";
     private static final String KEY_DEVICE_MEMORY = "device_memory";
-    private static final String Z551ML_CPU = "Z551ML_cpu";
-    private static final String Z550ML_CPU = "Z550ML_cpu";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -142,8 +140,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_MOD_VERSION, "ro.crdroid.display.version");
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
-        setStringSummary(Z550ML_cpu, "Intel® Atom™ Quad Core Z3560 @ 1.8GHz");
-        setStringSummary(Z551ML_cpu, "Intel® Atom™ Quad Core Z3580 @ 2.3GHz");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);

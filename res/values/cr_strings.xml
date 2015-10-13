@@ -633,8 +633,6 @@
     
     <!-- Zenfone2 custom strings -->
     <string name="qs_tile_zfota">OTA Updates</string>
-    <string name="add_z551ml_cpu">Asus Zenfone 2 Z551ML</string>
-    <string name="add_z550ml_cpu">Asus Zenfone 2 Z550ML</string>
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Task Manager</string>
