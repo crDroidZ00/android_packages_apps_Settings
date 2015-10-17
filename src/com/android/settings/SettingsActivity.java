@@ -218,6 +218,7 @@ public class SettingsActivity extends Activity
     private static final String EXTRA_UI_OPTIONS = "settings:ui_options";
 
     private static final String EMPTY_QUERY = "";
+    //private static final String XPOSED = "de.robv.android.xposed.installer";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -1220,6 +1221,12 @@ public class SettingsActivity extends Activity
                     if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {
                         removeTile = true;
                     }
+                /*} else if (id == R.id.xposed) {
+                    // Remove Xposed Installer if it's not installed
+                    if (!Utils.isPackageInstalled(this, XPOSED, false)) {
+                        removeTile = true;
+                    }
+                */
                 } else if (id == R.id.bluetooth_settings) {
                     // Remove Bluetooth Settings if Bluetooth service is not available.
                     if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {

@@ -109,7 +109,7 @@
                 />
         <dashboard-tile
                 android:id="@+id/zenfone2_ota"
-                android:title="OTA Updater"
+                android:title="OTAUpdates"
                 android:icon="@drawable/ic_zfota_tint"
                 android:key="ota_updates">
         <intent android:targetPackage="com.ota.updates" 
@@ -117,6 +117,30 @@
 		android:targetClass="com.ota.updates.activities.MainActivity"/>
         
         </dashboard-tile>
+        
+       <!-- <dashboard-tile
+                android:id="@+id/xposed"
+                android:title="Xposed Installer"
+                android:icon="@drawable/ic_xposed"
+                android:key="xposed_installer">
+        <intent android:targetPackage="de.robv.android.xposed.installer" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="de.robv.android.xposed.installer.OPEN_SECTION"/>
+        
+        </dashboard-tile> -->
+        
+        <dashboard-tile
+                android:id="@+id/viper"
+                android:title="ViperFX"
+                android:icon="@drawable/ic_viper_tint"
+                android:key="viperfx">
+        <intent android:targetPackage="com.vipercn.viper4android_v2" 
+		android:action="android.intent.action.MAIN" 
+		android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android"/>
+        
+        </dashboard-tile> 
+        
+        
 
     </dashboard-category>
 
