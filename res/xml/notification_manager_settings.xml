@@ -48,37 +48,57 @@
                 android:summaryOff="@string/heads_up_touch_outside_summary_disabled"
                 android:defaultValue="false" />
 
+        <SwitchPreference
+                android:key="heads_up_dismiss_on_remove"
+                android:title="@string/heads_up_dismiss_on_remove_title"
+                android:summaryOn="@string/heads_up_dismiss_on_remove_summary_enabled"
+                android:summaryOff="@string/heads_up_dismiss_on_remove_summary_disabled"
+                android:defaultValue="false" />
+
     </PreferenceCategory>
 
-    <!-- When device is locked -->
-    <com.android.settings.notification.DropDownPreference
-            android:key="lock_screen_notifications"
-            android:title="@string/lock_screen_notifications_title"
-            android:persistent="false" />
 
-    <!-- App notifications -->
-    <PreferenceScreen
-            android:key="app_notifications"
-            android:title="@string/app_notifications_title"
-            android:fragment="com.android.settings.notification.NotificationAppList" />
+    <PreferenceCategory
+        android:key="general_notification"
+        android:title="@string/general_notifications_title" >
 
-    <!-- Notification access -->
-    <Preference
-            android:key="manage_notification_access"
-            android:title="@string/manage_notification_access_title"
-            android:persistent="false"
-            android:fragment="com.android.settings.notification.NotificationAccessSettings" />
+        <!-- Zen Mode -->
+        <PreferenceScreen
+                android:key="zen_mode"
+                android:title="@string/zen_mode_settings_title"
+                android:fragment="com.android.settings.notification.ZenModeSettings" />
 
-    <!-- Filter notifications -->
-    <PreferenceScreen
-            android:title="@string/block_notifications_title"
-            android:summary="@string/block_notifications_summary"
-            android:fragment="com.android.settings.cyanogenmod.SpamList" />
+        <!-- When device is locked -->
+        <com.android.settings.notification.DropDownPreference
+                android:key="lock_screen_notifications"
+                android:title="@string/lock_screen_notifications_title"
+                android:persistent="false" />
 
-    <!-- Screen and animations -->
-    <PreferenceScreen
-        android:key="crdroid_animations"
-        android:fragment="com.android.settings.crdroid.CrdroidAnimations"
-        android:title="@string/crdroid_animations_title" />
+        <!-- App notifications -->
+        <PreferenceScreen
+                android:key="app_notifications"
+                android:title="@string/app_notifications_title"
+                android:fragment="com.android.settings.notification.NotificationAppList" />
+
+        <!-- Notification access -->
+        <Preference
+                android:key="manage_notification_access"
+                android:title="@string/manage_notification_access_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.notification.NotificationAccessSettings" />
+
+        <!-- Filter notifications -->
+        <PreferenceScreen
+                android:title="@string/block_notifications_title"
+                android:summary="@string/block_notifications_summary"
+                android:fragment="com.android.settings.cyanogenmod.SpamList" />
+
+        <!-- Screen and animations -->
+        <PreferenceScreen
+                android:key="crdroid_animations"
+                android:fragment="com.android.settings.crdroid.CrdroidAnimations"
+                android:title="@string/crdroid_animations_title" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

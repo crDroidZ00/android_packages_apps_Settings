@@ -131,8 +131,8 @@
   <string name="volbtn_cursor_control_on_reverse">Volum amunt/avall mou el cursor a dreta/esquerra</string>
   <string name="swap_volume_buttons_title">Reorienta</string>
   <string name="swap_volume_buttons_summary">Intercanvia els botons de volum quan la pantalla estigui rotada</string>
-  <string name="volume_keys_control_ring_stream_title">Les tecles de volum controlen el volum del to de trucada</string>
-  <string name="volume_keys_control_ring_stream_summary">Si està activat, les tecles de volum controlen el volum de del to de trucada. Si està desactivat, les tecles de volum controlen el volum multimèdia.</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Les tecles de volum controlen el volum del to de trucada</string>
+  <string name="volume_keys_control_ring_stream_summary_off">Les tecles de volum controlen el volum multimèdia</string>
   <string name="power_end_call_title">Finalitza la trucada</string>
   <string name="power_end_call_summary">Apretant el botó d\'apagat es finalitzarà la trucada actual</string>
   <string name="button_wake_title">Desperta el dispositiu</string>
@@ -345,6 +345,7 @@
   <string name="notification_light_missed_call_title">Trucada perduda</string>
   <string name="notification_light_voicemail_title">Contestador</string>
   <string name="notification_light_screen_on">Llums amb la pantalla encesa</string>
+  <string name="notification_light_use_multiple_leds">LEDs múltiples</string>
   <string name="keywords_lights_brightness_level">atenua la brillantor dels leds</string>
   <string name="notification_ringtone_title_cm">To de les notificacions</string>
   <string name="headset_connect_player_title">Crida l\'aplicació de música</string>
@@ -777,6 +778,7 @@
   <string name="lockscreen_message">Toca una icona a l\'esquerra o a la dreta per assignar una drecera a la pantalla de bloqueig.</string>
   <string name="lockscreen_choose_action_title">Tria l\'acció</string>
   <string name="lockscreen_visualizer_title">Mostra la visualització de la música</string>
+  <string name="nfc_title_category">NFC</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gestiona la configuració d\'SMS segurs</string>
   <string name="navigation_ring_title">Objectius de l\'anell de navegació</string>
@@ -827,7 +829,8 @@
   <string name="interruptions_ignore_while_media_title">Evita la baixada del so</string>
   <string name="interruptions_ignore_while_media_summary">No redueixis el volum de reproducció multimèdia quan arribi una notificació</string>
   <string name="none_is_silent_title">Mai silenciïs les alarmes</string>
-  <string name="none_is_silent_summary">En el mode Silenci les alarmes sempre sonen</string>
+  <string name="none_is_silent_summary_on">Les alarmes no seran ignorades en el mode silenci</string>
+  <string name="none_is_silent_summary_off">Les alarmes seran ignorades en el mode res</string>
   <string name="allow_lights_title">Permet les llums de notificació</string>
   <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
   <string name="live_display_mode">Mode de pantalla</string>
@@ -920,8 +923,8 @@
   <string name="fingerprint_dialog_title_rename">Edita empremta digital</string>
   <string name="fingerprint_dialog_name_label">Nom de l\'empremta digital</string>
   <string name="fingerprint_dialog_title_max_fingers_reached">S\'ha assolit el màxim d\'empremtes digitals</string>
-  <string name="fingerprint_dialog_msg_max_fingers_reached">Només pots enregistrar <xliff:g id="finger" example="5 fingerprints">%d</xliff:g> empremtes digitals. Esborra una empremta digital existent.</string>
-  <string name="fingerprint_title_manage_fingerprints">Gestiona les empremtes digitals <xliff:g id="finger">%d</xliff:g>/<xliff:g id="max">%d</xliff:g></string>
+  <string name="fingerprint_dialog_msg_max_fingers_reached">Només pots enregistrar <xliff:g id="finger" example="5">%d</xliff:g> empremtes digitals. Suprimeix una empremta digital existent.</string>
+  <string name="fingerprint_title_manage_fingerprints"><xliff:g id="finger">%d</xliff:g> de <xliff:g id="max">%d</xliff:g> empremtes digitals enregistrades</string>
   <string name="manage_fingerprints_description">Les empremtes digitals et permetran desbloquejar el telèfon ràpidament i fer fotos.</string>
   <string name="fingerprint_enrollment_introduction_title">Troba el teu sensor</string>
   <string name="fingerprint_enrollment_introduction_instructions">El sensor d\'empremtes digitals està situat a la part davantera o posterior del teu telèfon.</string>

@@ -352,21 +352,12 @@
     <string name="qs_notifications_tile">Notifications</string>
 
     <!-- Doze pulse (ambient display) options -->
-    <string name="doze_overwrite_value_title">Overwrite value</string>
-    <string name="doze_overwrite_value_summary">Allow to overwrite default value with user config</string>
-
     <string name="doze_list_mode_title">Doze mode</string>
     <string name="doze_list_mode_summary">Option to configure doze mode</string>
 
     <string name="doze_pulse_title">Time settings</string>
-    <string name="doze_pulse_duration_in_title">Fade in</string>
-    <string name="doze_pulse_duration_in_summary"></string>
-
     <string name="doze_pulse_duration_visible_title">Visible duration</string>
     <string name="doze_pulse_duration_visible_summary"></string>
-
-    <string name="doze_pulse_duration_out_title">Fade out</string>
-    <string name="doze_pulse_duration_out_summary"></string>
 
     <string name="doze_pulse_on_notifications_title">Pulse on notifications</string>
     <string name="doze_pulse_on_notifications_summary">Trigger activation only on pending notifications</string>
@@ -385,16 +376,12 @@
     <string name="doze_time_mode_title">Show clock and date</string>
     <string name="doze_time_mode_summary">Force showing time when there is no notification</string>
 
-    <string name="threehundred_ms">300 ms</string>
-    <string name="sixhundred_ms">600 ms</string>
-    <string name="sixhundred_ms_default">600 ms (default)</string>
-    <string name="ninehundred_ms">900 ms</string>
-    <string name="ninehundred_ms_default">900 ms (default)</string>
-    <string name="onehalf_second">1,5 s</string>
+    <string name="doze_schedule_title">Doze schedule</string>
+    <string name="doze_schedule_summary_on">Predefined doze repeat intervals (normally [1s,10s,30s,60s,120s]) will be used (default)</string>
+    <string name="doze_schedule_summary_off">Doze will only pulse once per notification</string>
+
     <string name="one_second">1 s</string>
-    <string name="one_second_default">1 s (default)</string>
     <string name="two_second">2 s</string>
-    <string name="three_second">3 s</string>
     <string name="three_second_default">3 s (default)</string>
     <string name="four_second">4 s</string>
     <string name="five_second">5 s</string>
@@ -627,6 +614,11 @@
     <string name="heads_up_touch_outside_summary_enabled">Hide heads up on touch outside and on home button press</string>
     <string name="heads_up_touch_outside_summary_disabled">Do not hide heads up on touch outside or on home button press</string>
 
+    <!-- Heads up dismiss on remove -->
+    <string name="heads_up_dismiss_on_remove_title">Swipe behavior</string>
+    <string name="heads_up_dismiss_on_remove_summary_enabled">Hide notification instead of dismiss</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">Hide and dismiss notification</string>
+
     <!-- Ticker -->
     <string name="status_bar_ticker_title">Notification Ticker</string>
     <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
@@ -641,5 +633,7 @@
     <!-- Battery saver color -->
     <string name="battery_saver_color_title">Warning color</string>
     <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+
+    <string name="general_notifications_title">General notifications</string>
 
 </resources>
