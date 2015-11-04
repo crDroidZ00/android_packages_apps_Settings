@@ -91,18 +91,15 @@
         <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_material</item>
         <item name="ic_wps">@drawable/ic_wps_dark</item>
         <item name="wifi_signal">@drawable/wifi_signal_dark</item>
-        <item name="android:colorPrimary">@color/midnight_primary</item>
-        <item name="android:colorAccent">@color/theme_accent</item>
+        <item name="android:colorBackground">@android:color/black</item>
     </style>
 
-    <style name="Theme.Light.WifiDialog" parent="@*android:style/Theme.Material.Dialog.Alert">
+    <style name="Theme.Light.WifiDialog" parent="@*android:style/Theme.Material.Light.Dialog.Alert">
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
         <item name="ic_menu_moreoverflow">@*android:drawable/ic_menu_moreoverflow_material</item>
         <item name="ic_wps">@drawable/ic_wps_light</item>
         <item name="wifi_signal">@drawable/wifi_signal_light</item>
-        <item name="android:colorPrimary">@color/midnight_primary</item>
-        <item name="android:colorAccent">@color/theme_accent</item>
     </style>
 
     <!-- Theme with no local references, used by AccountPreferenceBase where we have to inflate
@@ -194,7 +191,7 @@
 
     <style name="Theme.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
         <!-- Explicitly override the background color. -->
-        <item name="android:colorBackground">@color/midnight_primary</item>
+        <item name="android:colorBackground">@android:color/white</item>
 
         <!-- Used by the ActionBar -->
         <item name="android:colorPrimary">@color/theme_primary</item>
@@ -236,7 +233,7 @@
         <item name="android:windowSoftInputMode">adjustResize</item>
 
         <!-- Explicitly override the background color. -->
-        <item name="android:colorBackground">@color/midnight_primary</item>
+        <item name="android:colorBackground">@android:color/white</item>
 
         <!-- Used by the ActionBar -->
         <item name="android:colorPrimary">@color/theme_primary</item>
