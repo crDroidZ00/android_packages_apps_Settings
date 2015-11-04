@@ -110,19 +110,17 @@
          details of Theme, we can't reference any local resources and MUST instead use the values
          directly. So use #ff263238 instead of @color/theme_primary and so on. -->
     <style name="Theme.SettingsBase" parent="@android:style/Theme.Material" >
-        <item name="android:colorBackground">@color/midnight_primary</item>
-        <item name="android:textColor">@color/midnight_white</item>
-        <item name="android:statusBarColor">@color/pb_sb</item>
-        <item name="android:colorEdgeEffect">@color/midnight_theme</item>
-        <item name="android:colorAccent">@color/midnight_theme</item>
-        <item name="android:colorControlHighlight">@color/midnight_theme</item>
-        <item name="android:textColorPrimary">@color/midnight_white</item>
-        <item name="android:textColorSecondary">@color/midnight_text</item>
-        <item name="android:colorPrimaryDark">@color/pb_sb</item>
-        <item name="android:colorPrimary">@color/pb_ab</item>
-        <item name="android:windowBackground">@color/midnight_primary</item>
-        <item name="android:navigationBarColor">@color/midnight_primary</item>
-    </style>
+			<item name="android:textColor">@color/midnight_white</item>
+		    <item name="android:colorEdgeEffect">@color/midnight_theme</item>
+            <item name="android:colorAccent">@color/midnight_theme</item>
+		    <item name="android:colorControlHighlight">@color/midnight_theme</item>
+			<item name="android:textColorPrimary">@color/midnight_white</item>
+			<item name="android:textColorSecondary">@color/midnight_text</item>
+            <item name="android:colorPrimaryDark">@color/pb_sb</item>
+            <item name="android:colorPrimary">@color/pb_ab</item>
+			<item name="android:windowBackground">@color/midnight_primary</item>
+			<item name="android:navigationBarColor">@color/midnight_primary</item>
+		</style>
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
         <item name="@*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
@@ -168,8 +166,8 @@
         <item name="android:navigationBarColor">@color/midnight_primary</item>
         <item name="android:colorPrimaryDark">@color/pb_sb</item>
         <item name="android:colorPrimary">@color/pb_ab</item>
-        <item name="android:textColorPrimary">@color/midnight_white</item>
-        <item name="android:textColorSecondary">@color/midnight_text</item>
+		<item name="android:textColorPrimary">@color/midnight_white</item>
+		<item name="android:textColorSecondary">@color/midnight_text</item>
         <item name="switchBarTheme">@style/Theme.SwitchBar.SubSettings</item>
     </style>
 
@@ -201,7 +199,7 @@
         <!-- Used by the ActionBar -->
         <item name="android:colorPrimary">@color/theme_primary</item>
         <!-- Used by the StatusBar -->
-        <item name="android:colorPrimaryDark">@color/pb_sb</item>
+        <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
         <!-- Used by controls, e.g. CheckBox, ProgressBar, etc. -->
         <item name="android:colorAccent">@color/midnight_theme</item>
 
@@ -227,7 +225,7 @@
         <item name="android:actionBarTheme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
         <item name="android:colorAccent">@color/theme_accent</item>
         <item name="preferenceBackgroundColor">@drawable/preference_background</item>
-        <item name="android:windowBackground">@color/midnight_primary</item>
+                <item name="android:windowBackground">@color/midnight_primary</item>
         <item name="android:navigationBarColor">@color/midnight_primary</item>
         <item name="android:colorPrimaryDark">@color/pb_sb</item>
         <item name="android:colorPrimary">@color/pb_ab</item>
@@ -243,7 +241,7 @@
         <!-- Used by the ActionBar -->
         <item name="android:colorPrimary">@color/theme_primary</item>
         <!-- Used by the StatusBar -->
-        <item name="android:colorPrimaryDark">@color/pb_sb</item>
+        <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
         <!-- Used by controls, e.g. CheckBox, ProgressBar, etc. -->
         <item name="android:colorAccent">@color/midnight_theme</item>
 
